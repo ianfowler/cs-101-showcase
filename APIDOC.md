@@ -1,6 +1,6 @@
 ## **Get all Notes**
 
-Returns json array containing data on all recorded notes.
+Returns json array containing data on all of the recorded notes.
 
 - **URL**
 
