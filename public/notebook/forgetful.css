@@ -1,0 +1,113 @@
+/*
+   Author: Ian Fowler
+   CS 101 Spring 2021
+   Date: Jun 3rd, 2021
+   CP 4: Forgetful Notebook
+   Styles for page elements.
+ */
+
+ /* Oswald Font */
+ @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+:root {
+  --background-color: #F5F1ED;
+  --secondary-color: #440154;
+  --primary-color: #C95454;
+  --separator-color: #440154;
+  --footer-height: 3em;
+
+  --dot-a-color: #a5c4d4;
+  --dot-b-color: #C95454;
+}
+
+body {
+  width: 790px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+  padding-bottom: var(--footer-height);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: var(--background-color);
+}
+
+h1 {
+  color: var(--primary-color);
+  font-size: 3em;
+  border-bottom: 2px solid var(--separator-color);
+}
+
+.outline-button, .outline-field, .outline-container {
+  padding: 0.2em 0.4em;
+  margin-bottom: 1.0em;
+  margin-right: 0.2em;
+  border:0.2em solid var(--primary-color);
+  background-color: var(--background-color);
+  font-family: 'Oswald', sans-serif;
+  transition: all 0.2s;
+}
+
+.outline-button {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
+
+p, .outline-button, .outline-field, #high-score {
+  font-size: 18px;
+}
+
+main p {
+  width: auto;
+  align-self: center;
+  margin: 0;
+}
+
+#score, #lose-message {
+  font-size: 28px;
+  margin-top: 0.2em;
+}
+
+.outline-button:hover {
+  background-color:var(--background-color);
+  color:var(--primary-color);
+  box-shadow: inset var(--primary-color) 0 0 0.06em 0;
+}
+
+.row-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
+label, input {
+  display: block;
+}
+
+input {
+  margin-bottom: 16;
+}
+
+form textarea {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+  resize: none;
+  height: 200px;
+}
+
+form {
+  width: 100%;
+}

@@ -1,0 +1,43 @@
+ <!--
+     Name: Ian Fowler
+     CS 101 Spring 2021
+     Date: May 13th, 2021
+     This is the markup for the Starlink page. 
+     Contains header and attribution along with a div for Mapbox.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link rel="stylesheet" href="starlink.css" type="text/css" media="all"/>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
+  <script type="module" src="modules/spacex.js"></script>
+  <script type="module" src="modules/dochelper.js"></script>
+  <script type="module" src="index.js"></script>
+  <title>Starlink Tracker</title>
+</head>
+
+<body>
+  <header>
+    <h1>Starlink Tracker</h1>
+    <div class="row-group">
+      <h2 id="count-heading">
+        Found ... Starlink sattelites. 
+      </h2>
+      <p>
+        Click the pins to get the name of the satellite!
+      </p>
+    </div>
+    <!-- Error message to be populated with Javascript if necessary -->
+  </header>
+  <main>
+    <div id="map"></div>
+    <p>Starlink location data provided via the <a href=https://github.com/r-spacex/SpaceX-API/tree/master/docs/v4>r/SpaceX API</a>.</p>
+  </main>
+</body>
+</html>

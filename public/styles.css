@@ -1,0 +1,95 @@
+/*
+ * Author: Ian Fowler
+ * CS 101 Spring 2021
+ * CP 1 Spectrogram Viewer
+ * Styles for page elements, including overriding 
+ * the bland styling of SpectrogramJS
+ */
+
+ /* Oswald Font */
+ @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+:root {
+  --background-color: #F5F1ED;
+  --secondary-color: #440154;
+  --primary-color: #C95454;
+  --separator-color: #440154;
+  --footer-height: 3em;
+}
+
+body, .axis {
+  font-family: 'Oswald', sans-serif;
+  background-color: var(--background-color);
+}
+
+h1, h2 {
+  color: var(--primary-color);
+}
+
+h1 {
+  font-size: 3em;
+  border-bottom: 2px solid var(--separator-color);
+}
+
+h2 {
+  font-size: 2em;
+  margin: 0;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+/* Button */
+.outline-button, .spectrogram button, .spectrogram select{
+  padding: 0.2em 0.4em;
+  margin-bottom: 1.0em;
+  margin-right: 0.2em;
+  border:0.2em solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  transition: all 0.2s;
+}
+
+.outline-button:hover {
+  background-color:var(--background-color);
+  color:var(--primary-color);
+  box-shadow: inset var(--primary-color) 0 0 0.06em 0;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.row-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: var(--footer-height);
+}
+
+body {
+  width: 790px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+  padding-bottom: var(--footer-height);
+}
+
+div {
+  display: block;
+}
+
+div p {
+  display: block;
+  width: 60%;
+}

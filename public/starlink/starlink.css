@@ -1,0 +1,63 @@
+/*
+   Author: Ian Fowler
+   CS 101 Spring 2021
+   Date: May 12th, 2021
+   CP 3: Starlink
+ */
+
+ /* Oswald Font */
+ @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+:root {
+  --background-color: #F5F1ED;
+  --primary-color: #C95454;
+  --separator-color: #440154;
+}
+
+body {
+  width: 790px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+  padding-bottom: 3em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: var(--background-color);
+}
+
+/* Pin-label to be populated with javascript. */
+h1, h2, #pin-label, a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3em;
+  border-bottom: 2px solid var(--separator-color);
+}
+
+p {
+  font-size: 18px;
+}
+
+.row-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#map {
+  position: relative;
+  border: solid var(--primary-color);
+  width: 100%;
+  height: 500px;
+}
+

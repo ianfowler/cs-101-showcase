@@ -1,0 +1,42 @@
+ <!--
+     Name: Ian Fowler
+     CS 101 Spring 2021
+     Date: May 1st, 2021
+     This is the markup for the Rectangle Game page. 
+     It lays out the page elements for dots to be dragged within a box.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link rel="stylesheet" href="rectangle.css" type="text/css" media="all"/>
+  <script defer src="index.js"></script>
+  <title>Rectangle Game</title>
+</head>
+
+<body>
+  <header>
+    <h1>Rectangle Game</h1>
+    <div class="row-group">
+      <p>
+        Try to resist the temptation to touch the dots! All the kids love this game.
+      </p>
+      <a class="outline-button" id="start-button">Play game</a>
+    </div>
+  </header>
+  <main>
+    <div id="game-frame">
+      <div class="circle" draggable="true" id="circle-a"></div>
+      <div class="circle" draggable="true"  id="circle-b"></div>
+      <canvas id="reader-canvas"></canvas>
+    </div>
+    <!-- Add score or lose message here through javascript -->
+    
+    
+  </main>
+</body>
+</html>

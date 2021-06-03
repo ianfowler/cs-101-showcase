@@ -1,0 +1,83 @@
+ <!--
+     Name: Ian Fowler
+     CS 101 Spring 2021
+     Date: April 10th, 2021
+     This is the read_spectrograms.html page for the Spectrogram Viewer.
+     It is a reference explaining the purpose of spectrograms and how to read them.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+
+  <link href="dependencies/spectrogramJS/css/spectrogram.css" 
+        media="screen" rel="stylesheet" type="text/css" />
+  <script src="dependencies/spectrogramJS/js/d3.v5.min.js"></script>
+  <script src="dependencies/spectrogramJS/js/spectrogram.js"></script>
+
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="styles.css" type="text/css" media="all"/>
+  <title>Spectrogram Viewer</title>
+</head>
+<body>
+  <header>
+    <h1>Spectrogram Viewer</h1>
+    <div class="row-group">
+      <p>
+        This is a very brief reference for understanding the beautiful 
+        spectrograms you can create on this site.
+      </p>
+      <a class="outline-button" href="index.html">Create spectrograms</a>
+    </div>
+  </header>
+
+  <main>
+    <h2>Motivation for the spectrogram</h2>
+      <p>
+        Audio, like images, posesses the capability to be 
+        illusionary as it has no obligation to make sense to 
+        an observer. The properties of acoustic waves allows 
+        for what sounds like a singular note to actually
+        occupy many different frequencies, often integer 
+        multiples of what is called the fundamental frequency of 
+        the note. When a colleciton of pitches are compiled 
+        together, a savvy producer would want to know what 
+        collection of pitches are recorded, some metric related 
+        to their loudness, and an indication of when the sounds
+        are being played. The spectrogram is a tool to make sense 
+        of the audio present in a file and simultaneously 
+        conveys information in three dimensions. 
+      </p>
+      <h2>Axis: Time</h2>
+      <p>
+        The x-axis of the spectrogram represents time, in 
+        seconds, of the audio displayed. Try uploading a song and 
+        looking along the x-axis. In most songs, a periodic trend 
+        happens along this time axis corresponding to the 
+        song's tempo. Click <em>Play</em>, <em>Pause</em>, and 
+        <em>Stop</em> in order to listen to the uploaded audio.
+      </p>
+      <h2>Axis: Frequency</h2>
+      <p>
+        The y-axis of the spectrogram represents the frequency of 
+        the audio, in Hz. Loosely, this corresponds to
+        pitch. Try uploading a recording of whistling in successive 
+        high and low pitches. The variations should be 
+        visible along the frequency axis. Select the dropdown in 
+        order set the maximum frequency analyzed in the spectrogram.
+      </p>
+      <h2>Axis: Amplitude</h2>
+      <p>
+        The color axis of the spectrogram represents the amplitude 
+        or, roughly, loudness of the audio at a particular
+        frequency and time. Brigher (more yellow) colors correspond 
+        to louder audio, while darker (more purple) colors
+        correspond to quieter audio.
+      </p>
+  </main>
+</body>
+</html>

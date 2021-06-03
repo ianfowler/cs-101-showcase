@@ -1,0 +1,59 @@
+ <!--
+     Name: Ian Fowler
+     CS 101 Spring 2021
+     Date: Jun 3rd, 2021
+     This is the markup for the Forgetful Notebook page. 
+     It lays out the page elements for the form for submitting fields.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link rel="stylesheet" href="forgetful.css" type="text/css" media="all"/>
+  <script defer src="index.js"></script>
+  <title>Forgetful Notebook</title>
+</head>
+
+<body>
+  <header>
+    <h1>Forgetful Notebook</h1>
+    <div class="row-group">
+      <p id="message-board">
+        Record your thoughts here. Trust us, we'll remember ;)
+      </p>
+      <button class="outline-button" id="screen-button">View Submissions</button>
+    </div>
+  </header>
+  <main>
+    <form id="notes-form">
+      Title
+      <input class="outline-field" name="title" type="text"/>
+      First pet
+      <input class="outline-field" name="pet" type="text"/>
+      Mother's maiden name
+      <input class="outline-field" name="maidenName" type="text"/>
+      <label>
+        Thoughts, secrets, and deepest inquisitions:
+        <textarea id="message-field" class="outline-field"></textarea>
+      </label>
+
+      <button class="outline-button" id="submit-btn">Submit!</button>
+    </form>
+
+
+    <span id="saved-responses" class="hidden">
+      <!-- Responses to be populated with javascript -->
+    </span>
+  </main>
+  <footer>
+    <b>Privacy policy</b> At Forgetful Notebook, we strive for honesty in how we go about privacy.
+    Far too many services lack the transparancy their users deserve, which is why we'll get straight
+    to the point. We could not care less. There is nothing that you can input in this form that you 
+    should consider safe or secure in any way, at all, whatsoever. Please do not use this service.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+ <!--
+     Name: Ian Fowler
+     CS 101 Spring 2021
+     Date: April 10th, 2021
+     This is the index.html page for the homepage of Spectrogram Viewer.
+     It lays out the page elements for adding local files to the app and 
+     viewing their spectra.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="dependencies/spectrogramJS/css/spectrogram.css" 
+        media="screen" rel="stylesheet" type="text/css"/>
+  <script src="dependencies/spectrogramJS/js/d3.v5.min.js"></script>
+  <script src="dependencies/spectrogramJS/js/spectrogram.js"></script>
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="styles.css" type="text/css" media="all"/>
+  <title>Spectrogram Viewer</title>
+</head>
+<body>
+  <header>
+    <h1>Spectrogram Viewer</h1>
+    <div class="row-group">
+      <p>
+        Credits to <strong>Jim Vallandingham</strong> for the SpectrogramJS plotting library on 
+        <a href="https://github.com/vlandham/spectrogramJS">GitHub</a>.
+      </p>
+      <a class="outline-button" href="read_spectrograms.html">How to read a spectrogram</a>
+    </div>
+  </header>
+  <main>
+    <!-- Spectrograms to be populated by JavaScript-->
+    <section id="add-song">
+      <h3>Add a new audio file for analysis</h3>
+      <label class="outline-button">
+        <input type="file" id="file-selector" accept=".mp3, .ogg"/>
+        Choose Audio File
+      </label>
+    </section>
+  </main>
+</body>
+</html>
